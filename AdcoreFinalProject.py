@@ -53,7 +53,7 @@ double_rows = []
 database_file = ''
 while len(double_rows)<rows_threshold:
     time.sleep(time_schedule)
-    file_path = "C:/Users/Sapir/Desktop/tree_data.csv"
+    file_path = "C:/Users/Sapir/Desktop/Adcore/tree_data.csv"
     file_with_date = add_date_and_time(file_path)
     double_rows = pd.concat([file_with_date,file_with_date])
     if len(double_rows)>rows_threshold:
